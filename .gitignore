@@ -4,9 +4,12 @@
 # # Donot ignore these files/directories
 !*.*
 !assignment*
+!class/
 
 *.out
 *.o
 *.so
 
 assignment*/compiled
+
+
