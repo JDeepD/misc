@@ -1,0 +1,12 @@
+# # Ignore all
+*
+
+# # Donot ignore these files/directories
+!*.*
+!assignment*
+
+*.out
+*.o
+*.so
+
+assignment*/compiled
