@@ -5,6 +5,7 @@
 !*.*
 !assignment*
 !class/
+!patterns/
 
 *.out
 *.o
