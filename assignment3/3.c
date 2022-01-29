@@ -9,8 +9,9 @@
  *     * 
 *       *
 Solution: 
-1. We need to print 2n-1 rows for some input n.
-2. In all rows, except the nth row, 2n-3 total spaces are printed 
+1. We need to print 2n-1(always odd) rows for some input n.
+2. In all rows, except the nth row, 2n-3 total spaces are printed
+
 3. Each row from 1 to n-1 has the following property:
 	[k spaces] * [ m spaces ] * [k spaces]
 	
