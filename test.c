@@ -1,8 +1,12 @@
 #include <stdio.h>
 
-int main(int argc, char **argv)
-{
-	printf("Hello world!\n");
-	return 0;
+
+void test(void){
+	static int x = 5;
 }
 
+int main(int argc, char **argv)
+{
+	static int x = 4;
+	test();
+}

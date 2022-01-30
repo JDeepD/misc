@@ -25,7 +25,7 @@ From (n+1)th row to (2n-1)th row:
 	2. For any row k (k > n), there exists its mirror k' such that
 		k + k' = 2n (its not 2n-1 since row nos are starting from 1 and not 0)
 		
-		There, row no. of mirror of k is just (2n - k)
+		Therefore, row no. of mirror of k is just (2n - k)
 		Plug this row no. into the (1 to n)th row formula to print (2*(2n - k) - 1) nums
  */
 

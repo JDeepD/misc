@@ -24,7 +24,7 @@ Solution:
 
 	[k spaces] * [k spaces]
 	where, 
-	k = Half of total spaces printed = (2n-2)/2
+	k = Half of total stars printed = (2n-2)/2
 
 5. From (n+1)th row to (2n-1)th row, each row has the following property:
 	[k spaces] * [m spaces] * [k spaces]
@@ -36,10 +36,7 @@ Solution:
  */
 
 #include <stdio.h>
-
 void put_space(int n);
-void print_mid_row(int sidespaces, char character);
-void print_normal_row(int sidespaces, char character, int midspaces);
 
 int main(void)
 {
@@ -48,14 +45,27 @@ int main(void)
 
 	for ( int row = 1; row <= (2*n - 1); row++ )
 		if ( row == n ){
-			print_mid_row(n-1, '*');
+			put_space(n - 1);
+			printf("*");
+			put_space(n - 1);
+			printf("\n");
 
 		}
 		else if( row < n ){
-			print_normal_row(row - 1, '*', (2*n - 3) - 2*(row - 1));
+			put_space(row - 1);			
+			printf("*");
+			put_space((2*n - 3) - 2*(row - 1));
+			printf("*");
+			put_space(row - 1);
+			printf("\n");
 		}
 		else{
-			print_normal_row(2*n - 1 - row, '*', (2*n - 3) - 2*(2*n - 1 - row));
+			put_space(2*n - 1 - row);
+			printf("*");
+			put_space((2*n - 3) - 2*(2*n - 1 - row));
+			printf("*");
+			put_space(2*n - 1 - row);
+			printf("\n");
 		}
 
 	return 0;
@@ -66,25 +76,4 @@ int main(void)
 void put_space(int n){
 	for (int i = 0; i < n; i++)
 		printf(" ");
-}
-
-//this function prints rows other than the midrow
-void print_normal_row(int sidespaces, char character, int midspaces)
-{
-	put_space(sidespaces);
-	printf("%c", character);
-	put_space(midspaces);
-	printf("%c", character);
-	put_space(sidespaces);
-	printf("\n");
-}
-
-
-//self-explanatory
-void print_mid_row(int sidespaces, char character)
-{
-	put_space(sidespaces);
-	printf("%c", character);
-	put_space(sidespaces);
-	printf("\n");
 }
