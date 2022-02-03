@@ -1,13 +1,13 @@
 /*
-*       *
- *     * 
-  *   *  
-   * *   
-    *    
-   * *   
-  *   *  
- *     * 
-*       *
+1 *       *
+2  *     * 
+3   *   *  
+4    * *   
+5     *    
+6    * *   
+7   *   *  
+8  *     * 
+9 *       *
 Solution: 
 1. We need to print 2n-1(always odd) rows for some input n.
 2. In all rows, except the nth row, 2n-3 total spaces are printed
