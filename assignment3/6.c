@@ -19,8 +19,9 @@ int main(void)
 			case '7': printf("seven "); continue;
 			case '8': printf("eight "); continue;
 			case '9': printf("nine "); continue;
-			default: printf("Invalid character detected"); break;
+			default: printf("Invalid character detected\n"); break;
 		}
+	printf("\n");
 	}
 
 }

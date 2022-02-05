@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
 int isPrime(int n);
-
 int main(void)
 {
 	int n; printf("Enter n: ");
@@ -13,7 +11,6 @@ int main(void)
 		}
 	}
 }
-
 // returns 1 if n is prime. Else 0
 int isPrime(int n)
 {

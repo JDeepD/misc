@@ -7,7 +7,6 @@ int main(void)
 	int tries = 10;
 	srand(time(NULL));
 	int random_num = rand() % 101; // always returns something between 0 and 100(inclusive)
-	/* printf("%d\n", random_num); */
 
 	printf("I choose a number between 1-100. You job is to guess it\n\n");
 	do {
