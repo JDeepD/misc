@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int solve(char *string, int str_size, int vac_size);
 
 int main(void) {
