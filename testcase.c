@@ -2,11 +2,10 @@
 
 int main(void)
 {
-	int x = 0, i = 0;
-	for (i = 0; i < 5; i++); {
-		
-		x += i;
+	int i;
+	for (i = 0; i < 5; i ++) {
+		i = 10;
+		continue;
 	}
-
-	printf("%d\n", x);
+	printf("%d\n", i);
 }
