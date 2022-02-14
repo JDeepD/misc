@@ -1,9 +1,22 @@
-val_arr = [0, 1, 2, 3, 4]
-indexes = [0, 1, 2, 2, 1]
+input = "1abc234pqr"
+input_arr = list(input)
+indexarr = [0]*len(input)
 
-target = []
+for i in range(0, len(input_arr)):
+    if (input_arr[i].isnumeric()):
+        indexarr[i] = 1
 
-for i in range(len(val_arr)):
-    target.insert(indexes[i], val_arr[i])
+cnt_1 = 0
+sum = 0
 
-print(target)
+for i in range(len(indexarr) - 1, -1, -1):
+    if indexarr[i] == 1:
+        cnt_1 += 1
+    else:
+        cnt_1 = 0
+    if (input_arr[i].isnumeric()):
+        sum += indexarr[i] * int(input_arr[i]) * (10**(cnt_1 - 1))
+
+
+
+print(sum)
