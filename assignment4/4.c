@@ -8,7 +8,6 @@ int main(void)
 	printf("Enter num and exponent: ");
 	scanf("%d%d", &x, &base);
 	printf("%d^%d = %.2Lf\n", x, base, power(base, x));
-	printf("%lu", sizeof(long double));
 	return 0;
 }
 

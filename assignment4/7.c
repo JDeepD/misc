@@ -12,6 +12,6 @@ int main(void)
 void increment(void)
 {
 	static int x = 1;
-	printf("%d ", x);
-	x+= 5;
+	printf("   %d\n", x);
+	x++;
 }

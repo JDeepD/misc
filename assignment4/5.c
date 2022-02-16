@@ -1,16 +1,21 @@
-// Print Hello Word
 #include <stdio.h>
 
-int add(int a, int b);
+int rec_add(int a, int b);
 
 int main(void)
 {
-	printf("%d + %d = %d", 2, 3, add(2, 3));
+	int a, b;
+	printf("Enter 2 positive integers: ");
+	scanf("%d %d", &a, &b);
+	printf("%d x %d = %d\n", a, b, rec_add(a, b));
 	return 0;
 }
 
 
-int add(int a, int b)
+int rec_add(int a, int b)
 {
-	return a + b;
+	if (b > 0)
+		return a + rec_add(a, --b);
+	else
+		return 0;
 }

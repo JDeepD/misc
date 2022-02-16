@@ -47,20 +47,3 @@ int inarr(int sizeofarr, int *array, int num)
 	}
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
