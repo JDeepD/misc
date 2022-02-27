@@ -13,4 +13,3 @@ int main(void)
 	printf("Location of first element of str1: %p\n", &str1[0]);
 	printf("Address of str2 pointer: %p\n", &str1);
 }
-
