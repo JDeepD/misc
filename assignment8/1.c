@@ -3,8 +3,7 @@
 
 int main(void)
 {
-	char filename[100];
-	char contents[100];
+	char filename[100], c;
 
 	printf("Enter a filename: ");
 	scanf("%s", filename);
@@ -16,8 +15,10 @@ int main(void)
 		exit(1);
 	}
 
-	fscanf(fptr, "%[^\n]s", contents);
-	printf("Contents of %s: %s", filename, contents);
+	while ((c = fgetc(fptr)) != EOF) {
+		fputc(c, stdout);
+	}
+
 	fclose(fptr);
 
 	return 0;

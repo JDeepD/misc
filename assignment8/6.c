@@ -14,7 +14,7 @@ int main(void)
 			count++;
 		}
 	}
-	printf("Number of lines in %s is %d", filename, count);
+	printf("Number of lines in %s is %d\n", filename, count);
 	fclose(fptr);
 
 	return 0;

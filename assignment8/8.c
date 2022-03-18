@@ -27,7 +27,7 @@ int main(void)
 		}
 	}
 
-	printf("%d words and %d chars in %s", words, chars, filename);
+	printf("%d words and %d chars in %s\n", words, chars, filename);
 	fclose(fptr);
 	
 	return 0;
