@@ -2,8 +2,8 @@
 
 int main(void)
 {
-	int arr[3];
-	arr[0], arr[1], arr[2] = {1, 2, 4};
+	float x  = .2;
+	printf("%f\n", x);
 	return 0;
 }
 

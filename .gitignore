@@ -8,6 +8,7 @@
 !patterns/
 !ds/
 assignment6
+assignment7
 
 *.out
 *.o

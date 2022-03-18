@@ -1,0 +1,12 @@
+hi bhai
+	bol bhai "Even numbers between 0 and 20:";
+	bhai ye hai x = 20;
+	bhai ye hai y = 0;
+
+	jab tak bhai (y < x) {
+		agar bhai (y%2 == 0) {
+			bol bhai y;
+		}
+		y += 1;
+	}
+bye bhai
