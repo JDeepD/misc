@@ -18,6 +18,7 @@ int main(void)
 
 	fscanf(fptr, "%[^\n]s", contents);
 	printf("Contents of %s: %s", filename, contents);
+	fclose(fptr);
 
 	return 0;
 }
